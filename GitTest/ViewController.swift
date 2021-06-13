@@ -16,6 +16,14 @@ class ViewController: UIViewController {
         print("Master Git")
     }
 
-
+    @IBAction func tappedBranchOne(_ sender: UIButton) {
+        let alert = UIAlertController(title: "branch One", message: "메인에서 분기된 브랜치 1입니다", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "ok", style: .default) { (alert) in
+            
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
+    }
+    
 }
 
